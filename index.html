@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A to-do list web app which you can add your task">
+    <meta name="keywords" content="jQuery JavaScript HTML CSS">
+    <title>Todo List App | jQuery</title>
+    <link rel="shortcut icon" href="./assests/images/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assests/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ToDo List Web App</h1>
+    </header>
+    <main>
+        <section id="container">
+            <h1 class="todo-heading">To-Do List<span id="plus"><i class='bx bx-plus-circle'></i></span></h1>
+            <input type="text" placeholder="Add new task">
+            <div id="task">
+                <ul>
+                    <li><span class="trash"><i class='bx bxs-trash'></i></span>Create React Project</li>
+                    <li><span class="trash"><i class='bx bxs-trash'></i></span>Create Vue Project</li>
+                    <li><span class="trash"><i class='bx bxs-trash'></i></span>Create Angular Project</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Copyright <span id="current-year"></span> by <abbr title="Companigonj IT Institute">CIT</abbr>. All Rights Reserved</p>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').innerText = currentYear;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assests/js/app.js"></script>
+</body>
+</html>
